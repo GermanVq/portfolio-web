@@ -106,7 +106,7 @@ img {
 
 .section-title {
   font-size: var(--h1-font-size);
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   margin-bottom: var(--mb-3);
   text-align: center;
 }
@@ -114,7 +114,7 @@ img {
 .section-subtitle {
   display: block;
   font-size: var(--small-font-size);
-  color: var(--primary-color-darken);
+  color: var(--primary-color);
   text-align: center;
   font-weight: var(--font-bold);
   margin-bottom: 0.24rem;
@@ -394,6 +394,12 @@ img {
     text-align: initial;
     background-color: var(--primary-color-light);
   }
+
+  .about_container, 
+  .skills_container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
   .home_title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-1);
@@ -435,15 +441,11 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.about_information-title {
-  font-size: var(--h3-font-size);
-  color: var(--primary-color-dark);
-  margin-bottom: var(--mb-2);
-}
 
 .about_information-data {
   display: flex;
   align-items: center;
+  padding: 1rem 0 0 0;
 }
 
 .about-information-icon {
@@ -451,4 +453,64 @@ img {
   font-style: normal;
   color: var(--primary-color);
   margin-right: var(--mb-4);
+}
+
+/* SKILLS */
+.skills_container {
+  row-gap: var(--mb-2);
+  text-align: center;
+}
+
+.skills_data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: .5rem .1rem;
+  margin-bottom: var(--mb-1);
+  border-radius: .5rem;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, .09);
+}
+
+.skills_icon {
+  font-size: var(--mb-3);
+  font-style: normal;
+  color: var(--primary-color);
+  margin-right: var(--mb-4);
+}
+
+.skills_name {
+  text-transform: uppercase;
+}
+
+.skills_bar {
+  position: absolute;
+  bottom: 0rem;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+}
+
+.skills_html {
+  width: 100%;
+}
+
+.skills_css {
+  width: 80%;
+}
+
+.skills_javascript {
+  width: 67%;
+}
+
+.skills_python {
+  width: 70%;
+}
+
+.skills_java {
+  width: 55%;
+}
+
+
+.skills_php {
+  width: 50%;
 }
