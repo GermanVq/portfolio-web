@@ -113,7 +113,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--h2-font-size);
   color: var(--primary-color);
   text-align: center;
   font-weight: var(--font-bold);
@@ -317,8 +317,8 @@ img {
   position: absolute;
   right: 0;
   bottom: 50px;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50% 10% 50% 10%;
   overflow: hidden;
   
@@ -506,11 +506,27 @@ img {
   width: 70%;
 }
 
-.skills_java {
-  width: 55%;
+.skills_node {
+  width: 50%;
 }
-
 
 .skills_php {
   width: 50%;
+}
+
+.skills_git {
+  width: 90%;
+}
+
+.skills_github {
+  width: 90%;
+}
+
+.skills_figma {
+  width: 40%;
+}
+
+.skills_description {
+  margin-bottom: var(--mb-4);
+  text-align: center;
 }
