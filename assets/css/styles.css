@@ -240,89 +240,6 @@ img {
   transform: rotate(180deg);
 }
 
-
-/* MENU */
-
-/*
-.nav_close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  color: var(--primary-color-dark);
-  cursor: pointer;
-}
-
-.nav_menu .nav_logo-menu {
-  position: absolute;
-  color: var(--primary-color-dark);
-  text-transform: uppercase;
-  left: 1rem;
-  top: 4rem;
-  font-size: var(--h3-font-size);
-  font-weight: bold;
-  padding: 20px;
-} */
-/*
-.nav_menu .logo .nav_logo-menu::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 0;
-  top: 0;
-}
-
-.nav_menu .logo .nav_logo-menu::before {
-  border-top: 4px solid var(--primary-color-dark);
-  border-left: 4px solid var(--primary-color-dark);
-}
-
-.nav_menu .logo .nav_logo-menu::after {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  bottom: 0;
-  right: 0;
-}
-.nav_menu .logo .nav_logo-menu::after {
-  border-bottom: 4px solid var(--primary-color-dark);
-  border-right: 4px solid var(--primary-color-dark);
-} */
-
-/* 
-.nav_item:hover::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.2rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--primary-color-dark);
-} */
-
-/* .nav_link {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: var(--primary-color-light);
-  font-weight: var(--font-semi-bol);
-  transition: 0.3s;
-}
-
-
-.nav_toggle {
-  color: var(--primary-color-dark);
-  font-size: 1.9rem;
-  cursor: pointer;
-}
-
-.nav_logo {
-  color: var(--primary-color-dark);
-  font-size: 1.2rem;
-  cursor: pointer;
-} */
-
 /* Show menu */
 .show {
   left: 0;
@@ -517,6 +434,42 @@ img {
   text-align: center;
 }
 
+/* FOOTER */
+
+.footer {
+  background-color: var(--primary-color-dark);
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi-bol);
+  padding: 6rem 0;
+}
+
+.footer_icons {
+  margin-bottom: var(--mb-4);
+}
+
+.footer_social-icon{
+  font-size: 1.6rem;
+  color: var(--primary-color-light-dark);
+  margin: 0 1rem 4rem 1rem;
+}
+
+.footer_social-icon:hover {
+  color: var(--primary-color-darken);
+}
+
+.footer_name {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.footer_cpy {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+
 @media screen and (min-width: 768px) {
   body {
     margin: var(--header-height) 0 0 0;
@@ -535,11 +488,6 @@ img {
     width: 80px;
     top: 3rem
   }
-
-  /* .nav_menu {
-    width: var(--nav-width);
-  } */
-
 
   .home_data {
     align-self: flex-end;
