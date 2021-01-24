@@ -74,6 +74,13 @@ body {
   line-height: 1.6;
 }
 
+body.dark {
+  
+  --primary-color-light: var(--primary-color-darken);
+  --text-color: #fff;
+}
+
+
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -145,16 +152,57 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
-/*
-.head {
-  width: 100%;
-  position: fixed;
+
+/* SWITCH */
+.switch {
+  background: var(--primary-color-dark);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  outline: none;
+  right: 10px;
+  top: 10px;
+}
+.switch ::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--primary-color-light);
-  box-shadow: 0 2px 4px rgba(0.1, 0.1, 0, 0.1);
-} */
+  right: unset;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background-color: rgb(252, 198, 20);
+  color: #000;
+}
+
+.switch.active ::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.switch span .icon_switch {
+  font-size: 20px;
+}
+
 
 /* NAVBAR */
 .nav {
@@ -528,7 +576,7 @@ img {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
-    background-color: var(--primary-color-light);
+    
   }
 
   .about_container,
