@@ -74,8 +74,8 @@ body {
   line-height: 1.6;
 }
 
+/* BODY DARK MODE */
 body.dark {
-  
   --primary-color-light: var(--primary-color-darken);
   --text-color: #fff;
 }
