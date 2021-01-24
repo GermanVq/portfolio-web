@@ -38,3 +38,10 @@ function scrollActive() {
         }
     })
 }
+
+const btnStwitch = document.querySelector('#switch');
+
+btnStwitch.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
+    btnStwitch.classList.toggle('active');
+});
