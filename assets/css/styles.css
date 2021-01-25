@@ -72,12 +72,14 @@ body {
   background-color: var(--primary-color-light);
   color: var(--text-color);
   line-height: 1.6;
+  transition: 0.5s ease all;
 }
 
 /* BODY DARK MODE */
 body.dark {
   --primary-color-light: var(--primary-color-darken);
   --text-color: #fff;
+
 }
 
 
@@ -156,14 +158,14 @@ img {
 /* SWITCH */
 .switch {
   background: var(--primary-color-dark);
-  border-radius: 100px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   position: absolute;
   display: flex;
   outline: none;
   right: 10px;
-  top: 10px;
+  top: 60px;
 }
 .switch ::after {
   content: "";
@@ -171,17 +173,17 @@ img {
   width: 30px;
   height: 30px;
   position: absolute;
-  background: #f1f1f1;
+  background: var(--primary-color);
   top: 0;
   left: 0;
   right: unset;
-  border-radius: 100px;
+  border-radius: 10px;
   transition: .3s ease all;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .switch.active {
-  background-color: rgb(252, 198, 20);
+  background-color: #F3960B;
   color: #000;
 }
 
@@ -193,14 +195,14 @@ img {
 .switch span{
   width: 25px;
   height: 25px;
-  line-height: 25px;
+  line-height: 32px;
   display: block;
   background: none;
   color: #fff;
 }
 
 .switch span .icon_switch {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -276,7 +278,7 @@ img {
 .logo_text {
   display: inline;
   position: absolute;
-  left: -999px;
+  left: -200px;
   transition: var(--transition-speed);
 }
 
@@ -286,15 +288,6 @@ img {
 
 .nav:hover .logo_text {
   transform: rotate(180deg);
-}
-
-/* Show menu */
-.show {
-  left: 0;
-}
-
-.active {
-  color: var(--text-color);
 }
 
 /* HOME */
@@ -392,6 +385,9 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.about_description {
+  margin-bottom: var(--mb-2);
+}
 
 .about_information-data {
   display: flex;
@@ -548,13 +544,9 @@ img {
     align-self: flex-end;
   }
 
-  .about_description {
-    margin-bottom: var(--mb-5);
-  }
-
   .home_social-icon {
-  margin-bottom: 0;
-  margin-right: var(--mb-4);
+    margin-bottom: 0;
+    margin-right: var(--mb-4);
   }
 
   .home_social-icon:hover {
