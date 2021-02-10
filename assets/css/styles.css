@@ -606,7 +606,7 @@ img {
 
 
 /* Small screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .nav {
     bottom: 0;
     width: 100vw;
@@ -633,7 +633,7 @@ img {
 }
 
 /* Large screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .nav {
     top: 0;
     width: 4rem;
